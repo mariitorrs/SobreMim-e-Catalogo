@@ -23,6 +23,7 @@ header {
   display: flex;
   height:40px;
   gap:38px;
+  z-index: 100;
 }
 
 header a {
@@ -223,7 +224,7 @@ header a:hover{
 }
 
 .minhalista {
-  color: #FFFF;
+  color:#FFFF;
   height: 100vh;
 }
 
@@ -237,6 +238,7 @@ header a:hover{
   font-size: 76px;
   left: 85px;
   margin-top: 60px;
+  z-index:1;
 }
 
 .minhalista-container {
