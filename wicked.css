@@ -1,0 +1,111 @@
+/* ===== Reset e fonte ===== */
+html, body {
+    font-family: "Marko One", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: #1b1b1b;
+}
+
+
+  .botao_inicio {
+    background-color: #ff3b78;
+    border:none;
+    border-radius: 40px;
+    width: 242px;
+    height:73px;
+    font-size:30px;
+  }
+  
+  .inicio {
+    position: relative; /* muito importante */
+    background-image: url(img/wicked-fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #EEE9E3;
+    height: 100vh; /* altura fixa do header */
+  }
+  
+  .inicio img {
+    position: absolute;  /* faz a imagem “fixar” dentro do container */
+    top: 170px;
+    left: 85px;
+  }
+  
+  .inicio h3 {
+    font-size: 53px;
+    position: absolute;
+    top: 150px;
+    left: 750px;
+  }
+  
+  .inicio h1 {
+    font-size: 96px;
+    position: absolute;
+    left: 740px;
+    top: 230px;
+  }
+  
+  .lorem1 {
+    position: absolute;
+    font-size: 24px;
+    width: 877px;
+    top: 450px;
+    left: 750px;
+  }
+  
+  .lorem2 {
+    position: absolute;
+    font-size: 24px;
+    width: 877px;
+    top: 600px;
+    left: 750px;
+  }
+
+  .botao1 a{
+    text-decoration: none;
+    color:#ffffff;
+    font-family: "Marko One", serif; 
+
+  }
+
+  .botao1{
+    position: absolute;
+    color:#FFFF;
+    top:790px;
+    left:750px;
+  }
+
+  .botao_trailer{
+    position:absolute;
+    display: flex;
+    top:800px;
+    left:1040px;
+    color:#ffff;
+    gap:18px;
+    font-size:30px;
+    text-decoration: underline;
+  }
+
+.botao_trailer p{
+    margin-top:9px;
+
+}
+
+.botao_voltar{
+    position:absolute;
+    display: flex;
+    gap:18px;
+    font-size:30px;
+    color:#FFFF;
+    top:40px;
+    margin-left:1840px;
+    text-decoration: underline;
+}
+
+
+.botao_voltar svg{
+    margin-top:29px;
+}

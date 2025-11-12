@@ -1,212 +1,247 @@
-/* ===== Reset e fonte ===== */
 html, body {
-    font-family: "Marko One", serif;
-    font-weight: 400;
-    font-style: normal;
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
+  font-family: "Marko One", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  background-color: #1b1b1b;
 }
 
-/* ===== Header ===== */
 header {
-    background-color: rgba(234, 226, 217, 0.69);
-    border-radius: 70px;
-    padding: 20px;
-    justify-content: center;
-    position: fixed;
-    top: 16px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10;
-    width: 100%;
-    max-width: 1200px;
+  background-color: rgba(240, 232, 230, 0.45);
+  border-radius: 70px;
+  padding: 20px;
+  justify-content: center;
+  position: fixed;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  height:40px;
+  gap:38px;
 }
 
 header a {
-    text-decoration: none;
-    color: #4D2A89;
-    font-size: 27px;
-    margin-top: 125px;
-    margin-left: 40px;
+  text-decoration: none;
+  color: #FFFF;
+  font-size: 27px;
+  margin-top: 3px;
+  margin-left: 40px;
+  transition: color 0.3s ease-in-out;
 }
 
-/* ===== Seções ===== */
-.sobremim, 
-.curiosidades, 
-.minhasviagens, 
-.proximosdestinos {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    box-sizing: border-box;
+header a:hover{
+  color: #ff3b78;
 }
 
-/* ===== Sobre Mim ===== */
-.sobremim {
-    background-color: #EEE9E3;
+.botao2 .botao_imdb {
+  background-color: #ff3b78;
+  color: #fff;
+  border: none;
+  border-radius: 40px;
+  width: 180px;
+  height: 54px;
+  font-size: 25px;
+  text-align: center;
+  line-height: 54px;
+  margin-left: 0;
+  text-decoration: none;
+  display: inline-block;
 }
 
-.sobremim h1 {
-    font-size: 128px;
-    color: #4D2A89;
-    margin-left: 960px;
-    margin-top: 119px;
+.botao_inicio {
+  background-color: #ff3b78;
+  color:#EEE9E3;
+  border:none;
+  border-radius: 40px;
+  width: 242px;
+  height:73px;
+  font-size:30px;
 }
 
-.texto-sobremim {
-    font-size: 25px;
-    color: #4D2A89;
-    width: 821px;
-    margin-left: 961px;
-    margin-top: -120px;
+.inicio {
+  position: relative;
+  background-image: url(img/operacaocupido.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #EEE9E3;
+  height: 100vh;
 }
 
-/* ===== Curiosidades ===== */
-.curiosidades {
-    background-color: #4D2A89;
-    color: #EEE9E3;
+.inicio img {
+  position: absolute;
+  top: 204px;
+  left: 85px;
 }
 
-.curiosidades h1 {
-    font-size: 90px;
-    margin-left: 96px;
-    margin-top: -120px;
-    z-index: 10;
+.inicio h3 {
+  font-size: 53px;
+  position: absolute;
+  top: 150px;
+  left: 750px;
+  color:#ffff;
 }
 
-.curiosidades ol {
-    font-size: 25px;
-    margin-left: 96px;
-    width: 821px;
-    margin-top: -3px;
-    z-index: 10;
+.inicio h1 {
+  font-size: 96px;
+  position: absolute;
+  left: 740px;
+  top: 230px;
+  color:#ffff;
 }
 
-.curiosidades li {
-    margin-bottom: 10px;
+.lorem1 {
+  position: absolute;
+  font-size: 24px;
+  width: 877px;
+  top: 450px;
+  left: 750px;
 }
 
-/* ===== Minhas Viagens ===== */
-.minhasviagens {
-    background-color: #EEE9E3;
+.lorem2 {
+  position: absolute;
+  font-size: 24px;
+  width: 877px;
+  top: 600px;
+  left: 750px;
 }
 
-.minhasviagens h1 {
-    font-size: 90px;
-    margin-left: 96px;
-    margin-top: -180px;
-    color: #4D2A89;
-    z-index: 10;
+.botao1 a{
+  text-decoration: none;
+  color:#ffff;
+  font-family: "Marko One", serif; 
 }
 
-.minhasviagens ul {
-    font-size: 25px;
-    margin-left: 96px;
-    color: #4D2A89;
-    margin-top: -3px;
-    z-index: 10;
+.botao2 {
+  text-decoration: none;
+  color:#ffff;
+  font-family: "Marko One", serif; 
 }
 
-.img {
-    z-index: -1;
+.botao1{
+  position: absolute;
+  top:790px;
+  left:750px;
 }
 
-/* ===== Próximos Destinos ===== */
-.proximosdestinos {
-    background-color: #F07A9A;
+.botao_trailer{
+  position:absolute;
+  top:800px;
+  left:1040px;
+  color:#EEE9E3;
 }
 
-.proximosdestinos h1 {
-    font-size: 90px;
-    color: #EEE9E3;
-    z-index: 10;
-    left: 96px;
-    top: 200px;
-    position: absolute;
+.texto_assistir{
+  font-size:30px;
+  color:#FFFF;
+  text-decoration:underline;
+  left:1110px;
+  position:absolute;
+  top:780px;
 }
 
-.proximosdestinos ol {
-    font-size: 25px;
-    color: #4D2A89;
-    margin-left: 130px;
-    z-index: 10;
-    margin-top: 270px;
+.series{
+  color: #FFFF;
+  height: 100vh;
 }
 
-.proximosdestinos li {
-    margin-bottom: 10px;
-    z-index: 10;
+.series-cards {
+  text-align: center;
+  padding: 40px 0;
 }
 
-.sobremimimg, .linha, .linha2, .final,.curiosidadesimg, .retangulo,.minhas-viagenspng, 
-.final2,.quadrado, .destinosimg, .linha1, .linha22, .linha3, .linha4 {
-    position: absolute;
+.series h1 {
+  position: absolute;
+  font-size: 76px;
+  left: 85px;
+  margin-top: 60px;
 }
 
-.sobremimimg {
-    top: 104px;
-    left: 50px;
+.series-container {
+  margin-top:160px;
+  display: flex;
+  gap: 111px;
+  margin-left:85px;
 }
 
-.linha {
-    top: 412px;
-    left: 961px;
+.card {
+  padding: 15px;
+  width: 340px;
 }
 
-.linha2 {
-    top: 580px;
-    left: 961px;
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
 }
 
-.final {
-    top: 720px;
-    left: 810px;
+.card img:hover {
+  transform: scale(1.05);
 }
 
-.curiosidadesimg {
-    top: 65px;
-    left: 50px;
+.card h3 {
+  margin: 24px 0 20px;
+  font-size: 36px;
 }
 
-.minhas-viagenspng {
-    top: 2090px;
-    left: 10px;
-    width: 2000px;
+.card a{
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #ffffff;
+  text-decoration: underline; 
+  font-size:25px;
 }
 
-.final2 {
-    top: -1px;
-    left: 0px;
-    width: 100%;
+.filmes {
+  color: #FFFF;
+  height: 100vh;
 }
 
-.quadrado {
-    top: 440px;
-    left: 96px;
+.filmes-cards {
+  text-align: center;
+  padding: 40px 0;
 }
 
-.destinosimg {
-    top: -55px;
-    left: 200px;
+.filmes h1 {
+  position: absolute;
+  font-size: 76px;
+  left: 85px;
+  margin-top: 60px;
 }
 
-.linha1 {
-    top: 970px;
-    width: 100%;
+.filmes-container {
+  margin-top: 160px;
+  display: flex;
+  gap: 111px;
+  margin-left: 85px;
 }
 
-.linha22 {
-    top: 1940px;
-    width: 100%;
+.minhalista {
+  color: #FFFF;
+  height: 100vh;
 }
 
-.linha3 {
-    top: 2912px;
-    width: 100%;
+.minhalista-cards {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.minhalista h1 {
+  position: absolute;
+  font-size: 76px;
+  left: 85px;
+  margin-top: 60px;
+}
+
+.minhalista-container {
+  margin-top: 160px;
+  display: flex;
+  gap: 111px;
+  margin-left: 85px;
 }
